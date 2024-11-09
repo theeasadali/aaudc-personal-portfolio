@@ -68,10 +68,45 @@
 }
 
 /* COMMON UI */
+body {
+  position: relative;
+  background-color: var(--background);
+}
 .container {
-  width: var(--container-width-xs);
+  width: var(--container-width-xl);
   margin: 0 auto;
 }
+
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+header div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  gap: var(--space-xxl);
+  color: var(--primary);
+  transition: .3s ease-in;
+}
+
+header nav a:hover {color: var(--secondary);}
+
+footer {
+  padding: 40px 0;
+  background-color: var(--primary-dark);
+  color: white;
+}
+
 
 @media (min-width: var(--breakpoint-sm)) {
   :root {

@@ -5,11 +5,11 @@ export default function Header() {
     return(
         <header>
             <div className="container">
-                <Image src={"/AUDC\ LOGO.svg"} height={50} width={100} alt="Asad's Unique Design & Code"/>
+                <Link href={"/"}><Image src={"/AUDC\ LOGO.svg"} height={40} width={100} alt="Asad's Unique Design & Code"/></Link>
                 <nav>
                     <Link href={"/about-me"}>About me</Link>
                     <Link href={"/contact-me"}>Contact me</Link>
-                    <Link href={"/free tools"}>Free Tools</Link>
+                    <Link href={"/free-tools"}>Free Tools</Link>
                 </nav>
             </div>
         </header>

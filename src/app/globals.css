@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ============================== Colors ===================================== */
+  --primary: #1a73e8;
+  --primary-dark: #135bb0;
+  --primary-light: #d4e4fc;
+
+  --secondary: #ff5722;
+  --secondary-dark: #e64a19;
+  --secondary-light: #ff8a65;
+
+  --background: #f8f9fa;
+  --surface: #ffffff;
+  --border: #e0e0e0;
+  --shadow: rgba(0, 0, 0, 0.1);
+
+  --text-primary: #212121;
+  --text-secondary: #757575;
+  --text-inverse: #ffffff;
+  
+  --success: #4caf50;
+  --warning: #ff9800;
+  --error: #f44336;
+
+  --overlay-light: rgba(255, 255, 255, 0.8);
+  --overlay-dark: rgba(0, 0, 0, 0.5);
+
+  /* ==============================================Typography====================================== */
+
+  --font-size-xs: 0.75rem; 
+  --font-size-sm: 0.875rem; 
+  --font-size-md: 1rem;     
+  --font-size-lg: 1.25rem;  
+  --font-size-xl: 1.5rem;   
+  --font-size-xxl: 2rem;   
+
+  --line-height-body: 1.6;
+  --line-height-heading: 1.3;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* =======================================SPACING===================== */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-xxl: 64px;
+
+  /*  */
+  --breakpoint-xs: 480px;  
+  --breakpoint-sm: 768px;  
+  --breakpoint-md: 1024px; 
+  --breakpoint-lg: 1280px; 
+
+  /* LAYOUT */
+  --container-width-xs: 100%;    
+  --container-width-sm: 540px;   
+  --container-width-md: 720px;   
+  --container-width-lg: 960px;   
+  --container-width-xl: 1140px;  
+}
+
+/* COMMON UI */
+.container {
+  width: var(--container-width-xs);
+  margin: 0 auto;
+}
+
+@media (min-width: var(--breakpoint-sm)) {
+  :root {
+    --font-size-md: 1.25rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.5rem;
+  }
+
+  .container{width: var(--container-width-sm);}
+}
+
+@media (min-width: var(--breakpoint-md)) {
+  :root {
+    --font-size-md: 1.375rem;
+    --font-size-lg: 1.625rem;
+    --font-size-xl: 2.125rem;
+    --font-size-xxl: 2.75rem;
+  }
+
+  .container{width: var(--container-width-md);}
+}
+
+@media (min-width: var(--breakpoint-lg)) {
+  :root {
+    --font-size-md: 1.5rem;
+    --font-size-lg: 1.75rem;
+    --font-size-xl: 2.25rem;
+    --font-size-xxl: 3rem;
+  }
+
+  .container{width: var(--container-width-lg);}
+}

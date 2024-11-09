@@ -107,10 +107,18 @@ footer {
   color: white;
 }
 
+footer > p {
+  text-align: center;
+  border-top: 1px solid var(--border);
+  width: 70%;
+  padding-top: 20px;
+  letter-spacing: 1px;
+  margin: 20px auto 0 auto;
+}
+
 footer div {
   display: flex;
   gap: var(--space-xxl);
-  align-items: center;
 }
 
 .footer-info {
@@ -123,7 +131,9 @@ footer div {
 .footer-links {
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: var(--space-sm);
+  align-items: flex-start;
 }
 
 .footer-links p {

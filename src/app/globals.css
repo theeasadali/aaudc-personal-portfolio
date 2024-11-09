@@ -107,6 +107,30 @@ footer {
   color: white;
 }
 
+footer div {
+  display: flex;
+  gap: var(--space-xxl);
+  align-items: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.footer-links p {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
 
 @media (min-width: var(--breakpoint-sm)) {
   :root {
